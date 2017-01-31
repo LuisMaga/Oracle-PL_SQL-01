@@ -1,0 +1,10 @@
+-- ##################################################
+--
+--	Exercicio de criação de tabelas em PL/SQL
+-- 	2017 # Luís Magalhães
+--	Script v. 1.0.0
+--
+-- ##################################################
+
+
+ALTER SESSION SET NLS_DATE_FORMAT = 'yyyy/mm/dd hh24:mi:ss';
