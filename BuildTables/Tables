@@ -8,3 +8,22 @@
 
 
 ALTER SESSION SET NLS_DATE_FORMAT = 'yyyy/mm/dd hh24:mi:ss';
+
+CLEAR SCREEN;
+PROMPT ----------------------------------------------;
+
+ALTER TABLE dbAuthority DROP CONSTRAINT CSR_FK1_Aut01;
+ALTER TABLE dbAuthority DROP CONSTRAINT CSR_FK2_Aut02;
+DELETE FROM dbAuthority;
+DROP TABLE dbAuthority CASCADE CONSTRAINTS;
+
+CREATE TABLE dbAuthority 
+(
+  Aut_ID INT NOT NULL 
+, Aut_UserID INT NOT NULL 
+, Aut_Notes CLOB NOT NULL 
+, Aut_Date DATE NOT NULL 
+);
+
+
+
