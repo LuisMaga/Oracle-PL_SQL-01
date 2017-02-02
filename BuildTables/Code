@@ -1,9 +1,14 @@
 Set SERVEROUTPUT ON;
 
 DECLARE
-
+  v_Test  VARCHAR(125) := 'Learning PL/SQL';
+  v_Test2 VARCHAR(125);
+  
 BEGIN
+  v_Test2 =: 'Variable Init';
+  DBMS_OUTPUT.LINE(v_Test);
+
 
 EXCEPTION
 
-END
+END;
